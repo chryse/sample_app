@@ -35,6 +35,10 @@ textarea {
   }
 }
 
+.clearfix {
+		clear: both;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,7 +124,7 @@ aside {
 				span {
 						display: block;
 						margin-bottom: 3px;
-						line-height: 1px;
+						line-height: 12px;
 				}
 				h1 {
 						font-size: 1.4em;
@@ -187,5 +191,34 @@ input	{
 				&:last-child {
 						border-bottom: 1px solid $grayLighter;
 				}
+		}
+}
+
+
+/* microposts */
+
+.microposts {
+		list-style: none;
+		margin: 10px 0 0 0;
+
+		li {
+				padding: 10px 0;
+				border-top: 1px solid #e8e8e8;
+		}
+}
+.content {
+		display: block;
+}
+.timestamp {
+		color: $grayLight;
+}
+.gravatar {
+		float: left;
+		margin-right: 10px;
+}
+aside {
+		textarea {
+				height: 100px;
+				margin-bottom: 5px;
 		}
 }
